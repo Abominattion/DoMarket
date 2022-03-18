@@ -1,0 +1,503 @@
+<!--  
+     ___       _______   ______   .__   __.      ___   ____    ____ 
+    /   \     |       \ /  __  \  |  \ |  |     /   \  \   \  /   / 
+   /  ^  \    |  .--.  |  |  |  | |   \|  |    /  ^  \  \   \/   /  
+  /  /_\  \   |  |  |  |  |  |  | |  . `  |   /  /_\  \  \_    _/   
+ /  _____  \  |  '--'  |  `--'  | |  |\   |  /  _____  \   |  |     
+/__/     \__\ |_______/ \______/  |__| \__| /__/     \__\  |__|     
+                                                                    
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ==== TITLE ==== -->
+    <title>DoMarket</title>
+
+    <!-- ==== SHARED IMAGE ON SOCIAL MEDIAS ==== -->
+    <meta property="og:image" content="images/share.jpg" />
+    <meta name="twitter:image" content="images/share.jpg" />
+    <meta itemprop="image" content="images/share.jpg" />
+
+    <!-- ==== FAVICON ==== -->
+    <link rel="shortcut icon" href="images/icons/favicon.png" type="image/x-icon">
+
+    <!-- ==== CSS ==== -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- ==== PRETTY CHECKBOX ==== -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css">
+
+    <!-- ==== PRETTY CHECKBOX RESET ==== -->
+    <style>
+        .pretty .state label:after,
+        .pretty .state label:before {
+            top: calc((0% - (100% - 0.9em)) - 1%);
+        }
+
+        .pretty.p-switch.p-fill input:checked~.state:before {
+            border-color: #7C6FEE;
+            background-color: #7C6FEE !important;
+        }
+    </style>
+
+    <!-- ==== FONTAWESOME ==== -->
+    <script src="https://kit.fontawesome.com/208bc104ce.js" crossorigin="anonymous"></script>
+
+    <!-- ==== BOXICONS ==== -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- ==== JQUERY ==== -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- ==== SWIPER JS ==== -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+
+<body>
+
+    <!-- ==== HEADER ==== -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="#"><img src="images/icons/favicon.png" alt="Logo"><b>Do</b>Market</a>
+                </div>
+
+                <div class="navbar">
+                    <ul>
+                        <li class="has-colapse"><a href="#">Categorias<i class='bx bxs-chevron-down arrow'></i></a>
+                            <ul class="dropdown">
+                                <li><a href="#"><i class='bx bx-shopping-bag'></i> Todos os produtos</a></li>
+                                <li><a href="#"><i class='bx bx-male'></i> Masculino</a></li>
+                                <li><a href="#"><i class='bx bx-female'></i> Feminino</a></li>
+                                <li><a href="#"><i class='bx bxs-baby-carriage'></i> Infantil</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Ofertas do dia</a></li>
+                        <li><a href="#">Histórico</a></li>
+                        <li><a href="#">Contato</a></li>
+                        <li>
+                            <div class="pretty p-switch p-fill">
+                                <input type="checkbox" id="darkmod" />
+                                <div class="state">
+                                    <label class="dark-btn-label">DarkMode</label>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="right-navbar">
+                    <ul>
+                        <li><a class="" href="#"><i class='bx bx-search search'></i></a>
+                            <ul class="dropdown-search">
+                                <h2>Encontre diversos produtos, com os melhores preços!</h2>
+                                <div class="search-form">
+                                    <form action="#" method="post">
+
+                                        <div class="search-form-group">
+                                            <div class="search-input">
+                                                <input type="text" name="search" placeholder="Pesquisar no DoMarket">
+                                            </div>
+                                            <div class="search-button">
+                                                <button type="submit"><i class='bx bx-search'></i></button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </ul>
+                        </li>
+                    </ul>
+                    <a class="" href="#"><i class='bx bx-cart-alt cart'></i><small>Carrinho<span> (0)</span></small></a>
+                    <a class="btn btn-primary" href="login.html">Entrar</a>
+                    <button class="btn btn-secondry btn-header-mobile" id="btn-mobile">
+                        <span class="hamburger"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ==== SWIPER SLIDE ==== -->
+    <section class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/slide/slide-1.jpeg" alt=""></div>
+            <div class="swiper-slide"><img src="images/slide/slide-2.jpeg" alt=""></div>
+            <div class="swiper-slide"><img src="images/slide/slide-3.jpeg" alt=""></div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </section>
+
+    <!-- ==== PRODUCTS ==== -->
+    <section class="products content">
+        <div class="container">
+            <div class="section-header">
+                <h2>Área feminina</h2>
+                <div class="section-header-border"></div>
+            </div>
+            <div class="products-content">
+
+                <article>
+                    <div class="product-image">
+                        <img src="images/products/woman-product-1.jpeg" alt="Produto">
+                    </div>
+
+                    <div class="product-details">
+                        <a href="single-product.html"><h2>Nome do produto</h2></a>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam condimentum sollicitudin lacinia.</p>
+                    </div>
+
+                    <div class="product-price">
+                        <div class="price">
+                        <small>R$ 299</small><span>R$199</span>
+                        </div>
+
+                        <div class="product-icons">
+                            
+                            <div class="liked-and-cart">
+                                <div class="pretty p-icon p-toggle p-plain">
+                                    <input type="checkbox" />
+                                    <div class="state p-off">
+                                        <i class="icon fa fa-heart-o "></i>
+                                        <label></label>
+                                    </div>
+                                    <div class="state p-on p-info-o">
+                                        <i class="icon fa fa-heart"></i>
+                                        <label></label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="liked-and-cart">
+                                <div class="pretty p-icon p-toggle p-plain">
+                                    <input type="checkbox" />
+                                    <div class="state p-off">
+                                        <i class="icon bx bx-cart"></i>
+                                        <label></label>
+                                    </div>
+                                    <div class="state p-on p-info-o">
+                                        <i class="icon fas fa-shopping-cart"></i>
+                                        <label></label>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </article>
+
+                <article>
+                    <div class="product-image">
+                        <img src="images/products/woman-product-2.jpeg" alt="Produto">
+                    </div>
+
+                    <div class="product-details">
+                        <h2>Nome do produto</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam condimentum sollicitudin lacinia.</p>
+                    </div>
+
+                    <div class="product-price">
+                        <div class="price">
+                        <small>R$ 299</small><span>R$199</span>
+                        </div>
+
+                        <div class="product-icons">
+                            
+                            <div class="liked-and-cart">
+                                <div class="pretty p-icon p-toggle p-plain">
+                                    <input type="checkbox" />
+                                    <div class="state p-off">
+                                        <i class="icon fa fa-heart-o "></i>
+                                        <label></label>
+                                    </div>
+                                    <div class="state p-on p-info-o">
+                                        <i class="icon fa fa-heart"></i>
+                                        <label></label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="liked-and-cart">
+                                <div class="pretty p-icon p-toggle p-plain">
+                                    <input type="checkbox" />
+                                    <div class="state p-off">
+                                        <i class="icon bx bx-cart"></i>
+                                        <label></label>
+                                    </div>
+                                    <div class="state p-on p-info-o">
+                                        <i class="icon fas fa-shopping-cart"></i>
+                                        <label></label>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </article>
+
+                <article>
+                    <div class="product-image">
+                        <img src="images/products/woman-product-3.jpeg" alt="Produto">
+                    </div>
+
+                    <div class="product-details">
+                        <h2>Nome do produto</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam condimentum sollicitudin lacinia.</p>
+                    </div>
+
+                    <div class="product-price">
+                        <div class="price">
+                        <small>R$ 299</small><span>R$199</span>
+                        </div>
+
+                        <div class="product-icons">
+                            
+                            <div class="liked-and-cart">
+                                <div class="pretty p-icon p-toggle p-plain">
+                                    <input type="checkbox" />
+                                    <div class="state p-off">
+                                        <i class="icon fa fa-heart-o "></i>
+                                        <label></label>
+                                    </div>
+                                    <div class="state p-on p-info-o">
+                                        <i class="icon fa fa-heart"></i>
+                                        <label></label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="liked-and-cart">
+                                <div class="pretty p-icon p-toggle p-plain">
+                                    <input type="checkbox" />
+                                    <div class="state p-off">
+                                        <i class="icon bx bx-cart"></i>
+                                        <label></label>
+                                    </div>
+                                    <div class="state p-on p-info-o">
+                                        <i class="icon fas fa-shopping-cart"></i>
+                                        <label></label>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </article>
+
+                <article>
+                    <div class="product-image">
+                        <img src="images/products/woman-product-4.jpeg" alt="Produto">
+                    </div>
+
+                    <div class="product-details">
+                        <h2>Nome do produto</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam condimentum sollicitudin lacinia.</p>
+                    </div>
+
+                    <div class="product-price">
+                        <div class="price">
+                        <small>R$ 299</small><span>R$199</span>
+                        </div>
+
+                        <div class="product-icons">
+                            
+                            <div class="liked-and-cart">
+                                <div class="pretty p-icon p-toggle p-plain">
+                                    <input type="checkbox" />
+                                    <div class="state p-off">
+                                        <i class="icon fa fa-heart-o "></i>
+                                        <label></label>
+                                    </div>
+                                    <div class="state p-on p-info-o">
+                                        <i class="icon fa fa-heart"></i>
+                                        <label></label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="liked-and-cart">
+                                <div class="pretty p-icon p-toggle p-plain">
+                                    <input type="checkbox" />
+                                    <div class="state p-off">
+                                        <i class="icon bx bx-cart"></i>
+                                        <label></label>
+                                    </div>
+                                    <div class="state p-on p-info-o">
+                                        <i class="icon fas fa-shopping-cart"></i>
+                                        <label></label>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </article>
+
+                <article>
+                    <div class="product-image">
+                        <img src="images/products/woman-product-5.jpeg" alt="Produto">
+                    </div>
+
+                    <div class="product-details">
+                        <h2>Nome do produto</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam condimentum sollicitudin lacinia.</p>
+                    </div>
+
+                    <div class="product-price">
+                        <div class="price">
+                        <small>R$ 299</small><span>R$199</span>
+                        </div>
+
+                        <div class="product-icons">
+                            
+                            <div class="liked-and-cart">
+                                <div class="pretty p-icon p-toggle p-plain">
+                                    <input type="checkbox" />
+                                    <div class="state p-off">
+                                        <i class="icon fa fa-heart-o "></i>
+                                        <label></label>
+                                    </div>
+                                    <div class="state p-on p-info-o">
+                                        <i class="icon fa fa-heart"></i>
+                                        <label></label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="liked-and-cart">
+                                <div class="pretty p-icon p-toggle p-plain">
+                                    <input type="checkbox" />
+                                    <div class="state p-off">
+                                        <i class="icon bx bx-cart"></i>
+                                        <label></label>
+                                    </div>
+                                    <div class="state p-on p-info-o">
+                                        <i class="icon fas fa-shopping-cart"></i>
+                                        <label></label>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </article>
+
+                <article>
+                    <div class="product-image">
+                        <img src="images/products/woman-product-6.jpeg" alt="Produto">
+                    </div>
+
+                    <div class="product-details">
+                        <h2>Nome do produto</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam condimentum sollicitudin lacinia.</p>
+                    </div>
+
+                    <div class="product-price">
+                        <div class="price">
+                        <small>R$ 299</small><span>R$199</span>
+                        </div>
+
+                        <div class="product-icons">
+                            
+                            <div class="liked-and-cart">
+                                <div class="pretty p-icon p-toggle p-plain">
+                                    <input type="checkbox" />
+                                    <div class="state p-off">
+                                        <i class="icon fa fa-heart-o "></i>
+                                        <label></label>
+                                    </div>
+                                    <div class="state p-on p-info-o">
+                                        <i class="icon fa fa-heart"></i>
+                                        <label></label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="liked-and-cart">
+                                <div class="pretty p-icon p-toggle p-plain">
+                                    <input type="checkbox" />
+                                    <div class="state p-off">
+                                        <i class="icon bx bx-cart"></i>
+                                        <label></label>
+                                    </div>
+                                    <div class="state p-on p-info-o">
+                                        <i class="icon fas fa-shopping-cart"></i>
+                                        <label></label>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==== FOOTER ==== -->
+    <div class="footer">
+        <footer>
+            <div class="container">
+                <div class="footer-content">
+                    <article class="footer-site-details">
+                        <h2>DoMarket</h2>
+                        <img src="images/icons/favicon.png" alt="Logo">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ultricies vel quam quis efficitur.
+                            Suspendisse tincidunt, enim ac aliquam pharetra, odio sapien luctus enim, non consectetur nulla
+                            arcu ut mauris. </p>
+    
+                    </article>
+    
+                    <article class="useful-links">
+                        <h2>Links úteis</h2>
+                        <ul>
+                            <li><a href="#">Ofertas do dia</a></li>
+                            <li><a href="#">Histórico</a></li>
+                            <li><a href="#">Contato</a></li>
+                            <li><a href="#">Ajuda</a></li>
+                        </ul>
+                    </article>
+    
+                    <article class="footer-newsletter">
+                        <h2>Newsletter</h2>
+                        <p>Informe seu email para receber nossas promoções</p>
+                        <form action="" method="post">
+                            <input type="email" name="email" placeholder="Informe seu email:">
+                            <button class="btn btn-primary">Quero ser informado</button>
+                        </form>
+                    </article>
+                </div>
+    
+                <div class="copyright">
+                    <p><small>
+                            Copyright &copy;<script>
+                                document.write(new Date().getFullYear());
+                            </script> Todos os direitos reservados <strong><a
+                                    href="https://www.facebook.com/adonay.douglas.7/" target="_blank"><strong>Adonay
+                                        Douglas</strong></a></strong> <i class="icon-heart text-danger"
+                                aria-hidden="true"></i>
+                        </small></p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- ==== SCROLLUP ==== -->
+    <div class="scroll-up-btn">
+        <i class="fas fa-angle-up"></i>
+    </div>
+
+    <!-- ==== JS ==== -->
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
